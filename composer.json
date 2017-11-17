@@ -1,0 +1,33 @@
+{
+  "name": "dameert/frontend-editor",
+  "description": "Integration of the medium-editor in a bootstrap template",
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "David Meert",
+      "email": "david@davidmeert.be"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "symfony/symfony": "3.3.*",
+    "twig/twig": "^1.0||^2.0",
+    "symfony/assetic-bundle": "^2.8"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "DAMEERT\\FrontendEditor\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "/src/Tests/"
+    ]
+  },
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "0.1-dev"
+    }
+  }
+}
