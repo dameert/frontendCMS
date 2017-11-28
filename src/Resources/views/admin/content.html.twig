@@ -1,0 +1,16 @@
+{% extends 'admin_base.html.twig' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h1>Administration</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ul>
+                {% for name in content.list %}
+                    <li><a href="{{ path('content_edit', {'name': name}) }}">{{ name|replace({'-': ' '})|humanize }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

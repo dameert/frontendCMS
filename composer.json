@@ -1,6 +1,6 @@
 {
-  "name": "dameert/frontend-editor",
-  "description": "Integration of the medium-editor in a bootstrap template",
+  "name": "dameert/frontend-cms",
+  "description": "Simple CMS for small projects with file based content storage and frontend editor for updates",
   "license": "MIT",
   "type": "symfony-bundle",
   "authors": [
@@ -11,6 +11,8 @@
   ],
   "require": {
     "php": ">=5.6",
+    "doctrine/doctrine-bundle": "^1.6",
+    "doctrine/orm": "^2.5",
     "symfony/symfony": "3.3.*",
     "twig/twig": "^1.0||^2.0",
     "symfony/assetic-bundle": "^2.8"
@@ -19,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "DAMEERT\\FrontendEditor\\": "src/"
+      "Dameert\\FrontendCms\\": "src/"
     },
     "exclude-from-classmap": [
       "/src/Tests/"

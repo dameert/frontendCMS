@@ -1,0 +1,14 @@
+{% trans_default_domain "frontend-editor" %}
+{% if is_granted('ROLE_FRONTEND_ADMIN') %}
+    <div class="fet fet-fixed-bottom">
+        <div class="container">
+            <div class="fet-left" id="fe-toolbar">
+                <a class="btn btn-primary" id="FetEditBtn"><i class="fa fa-edit"></i> {{ 'Edit page'|trans }}</a>
+            </div>
+            <div class="fet-right">
+                <a class="btn btn-success hidden" id="FetSaveBtn"><i class="fa fa-save"></i> {{ 'Save changes'|trans }}</a>
+                <a class="btn btn-danger hidden" id="FetCancelBtn"><i class="fa fa-times"></i> {{ 'Cancel changes'|trans }}</a>
+            </div>
+        </div>
+    </div>
+{% endif %}

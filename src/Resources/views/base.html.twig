@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+    <head>
+        {% block head %}{% endblock %}
+        {% block stylesheets %}
+            {% include 'DameertFrontendCmsBundle::css.html.twig' %}
+        {% endblock %}
+    </head>
+    {% block body %}
+    <body{{ frontendEditorAttributes(type) }}>
+        {% include 'DameertFrontendCmsBundle::toolbar.html.twig' %}
+        {% block content %}{% endblock %}
+        {% block javascripts %}
+            {% include 'DameertFrontendCmsBundle::js.html.twig' %}
+        {% endblock %}
+    </body>
+    {% endblock %}
+</html>

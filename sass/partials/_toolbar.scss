@@ -1,0 +1,26 @@
+.fet {
+  clear: both;
+  min-height:50px;
+  background: $toolbar-background;
+  border-color: $toolbar-border-color;
+  z-index: 9000;
+
+  &.fet-fixed-bottom {
+    bottom: 0px;
+    margin-bottom: 0px;
+    position: fixed;
+    right: 0;
+    left: 0;
+  }
+
+  .fet-left {
+    margin-left:0px;
+    margin-right:0px;
+    float:left;
+  }
+
+  .fet-right {
+    @extend .fet-left;
+    float: right;
+  }
+}
