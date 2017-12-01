@@ -139,17 +139,6 @@ php bin/console d:s:u --force
 
 Todo: create first user and admin interface. For now add your user manually in the database and [use symfony to encode your password](https://symfony.com/doc/current/security.html#c-encoding-the-user-s-password)
 
-Step 7. Dump your assets for production environment
----------------------------------------------------
-```console
-php bin/console assetic:dump --env=prod --no-debug
-```
-
-This should create the following two files:
-
-- `app/../web/css/frontend-editor-compiled.css`
-- `app/../web/js/frontend-editor-compiled.js`
-
 Step 7. Integration
 -------------------
 To integrate the frontend editor in your project you have 2 options:

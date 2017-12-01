@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAK;EACH,KAAK,EAAE,IAAI;EACX,UAAU,EAAC,IAAI;EACf,UAAU,ECHY,WAAW;EDIjC,YAAY,ECHU,WAAW;EDIjC,OAAO,EAAE,IAAI;EAEb,qBAAmB;IACjB,MAAM,EAAE,GAAG;IACX,aAAa,EAAE,GAAG;IAClB,QAAQ,EAAE,KAAK;IACf,KAAK,EAAE,CAAC;IACR,IAAI,EAAE,CAAC;EAGT,+BAAU;IACR,WAAW,EAAC,GAAG;IACf,YAAY,EAAC,GAAG;IAChB,KAAK,EAAC,IAAI;EAGZ,eAAW;IAET,KAAK,EAAE,KAAK;;AEvBhB,wBAAyB;EACvB,MAAM,EAAE,MAAM",
-"sources": ["../../../../sass/partials/_toolbar.scss","../../../../sass/partials/_variables.scss","../../../../sass/partials/_editor.scss"],
-"names": [],
-"file": "frontend-editor.css"
-}
