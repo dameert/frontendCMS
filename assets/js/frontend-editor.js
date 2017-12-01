@@ -1,5 +1,5 @@
 require('../css/frontend-cms.scss');
-require('./medium-editor');
+require('medium-editor');
 
 var $ = require('jquery');
 require('bootstrap-sass');

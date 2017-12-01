@@ -3,8 +3,9 @@ $fa-font-path: "~font-awesome/fonts";
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 @import '~font-awesome/scss/font-awesome';
 
-@import "medium-editor.css";
-@import "bootstrap-medium-theme.css";
+@import "~medium-editor/dist/css/medium-editor.css";
+@import "~medium-editor/dist/css/themes/bootstrap.css";
+
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/toolbar";
