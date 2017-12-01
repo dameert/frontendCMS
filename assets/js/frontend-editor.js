@@ -1,8 +1,8 @@
 require('../css/frontend-cms.scss');
-require('medium-editor');
 
 var $ = require('jquery');
 require('bootstrap-sass');
+require('medium-editor');
 
 var FetEditBtn = $('#FetEditBtn');
 var FetSaveBtn = $('#FetSaveBtn');
