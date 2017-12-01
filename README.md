@@ -33,7 +33,6 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             // ...
-            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Dameert\FrontendCms\DameertFrontendCmsBundle(),
         );
 
@@ -44,20 +43,7 @@ class AppKernel extends Kernel
 }
 ```
 
-Step 3. Configure assetic
--------------------------
-```yml
-# app/config/config.yml
-assetic:
-    debug:          '%kernel.debug%'
-    use_controller: '%kernel.debug%'
-    filters:
-        cssrewrite: ~
-```
-
-For more information, see [assetic documentation](http://symfony.com/doc/current/frontend/assetic/asset_management.html)
-
-Step 4. Configure the bundle
+Step 3. Configure the bundle
 ---------------------------
 ```yml
 # app/config/config.yml
@@ -69,7 +55,7 @@ dameert_frontend_cms:
 - content_path: the folder containing the json files which represent the contents of your website.
 - template_path: the folder containing the templates that represent your different content types.
 
-Step 5. Configure Routing
+Step 4. Configure Routing
 -------------------------
 ```yml
 # app/config/routing.yml
@@ -78,7 +64,7 @@ dameert_frontend_cms:
     type: annotation
 ```
 
-Step 6. Add Security
+Step 5. Add Security
 --------------------
 In order to edit content via the frontend, the role `'ROLE_FRONTEND_ADMIN'` is required. The bundle comes with a predefined User object that can be used for this.
 
@@ -139,28 +125,39 @@ php bin/console d:s:u --force
 
 Todo: create first user and admin interface. For now add your user manually in the database and [use symfony to encode your password](https://symfony.com/doc/current/security.html#c-encoding-the-user-s-password)
 
-Step 7. Integration
+Step 6. Integration
 -------------------
-To integrate the frontend editor in your project you have 2 options:
-1. Extend the `base.html.twig template` provided by the bundle.
-2. Integrate `/web/css/frontend-editor-compiled.css` and `/web/js/frontend-editor-compiled.js` in your own templates.
-When you go for your own implementation, make sure to use `{{ ajaxSavePath() }}` in your body tag:
+
+### Twig template
+Pages that are editable should be extend from the base template:
 ```twig
-{% extends 'DameertFrontendEditorBundle::base.html.twig' %}
+{% extends 'DameertFrontendCmsBundle::base.html.twig' %}
+```
 
-...
+#### Performance considerations
+The bundle includes jQuery and Bootstrap in it's js and css files. If your project is also using jQuery / Bootstrap then those libraries will be loaded twice on every page.
 
+Our goal is to provide a 'light' version of the base template without jQuery, nor Bootstrap for your content pages.
+You should add jQuery and Bootstrap yourself on every page, and they will only be loaded once.
+
+### Overriding the base template
+The body element in the base template contains data-attributes that are required for the frontend editor to function.
+When overriding the template, make sure to call the 'frontendEditorAttributes' function with the 'type' variable, containing the template name to use in twig:
+```twig
 <body {{ frontendEditorAttributes(type) }}>
-
-..
-{% include 'DameertFrontendEditorBundle::js.html.twig' %}
 ```
 
+### Defining the editable content
+The editable parts of content should be tagged with data attributes using the our edit tag function:
+```twig
+<div id="my-content" {{ editable('my-content-field-in-json-file') }}>
+    ...
+</div>
 ```
+
 //Todo break this part down in subsections:
 //Twig layout
 //Defining content types
 //Defining content data
 //Including the frontend edition (editor & metadata)
 //Access json stored data in twig
-```

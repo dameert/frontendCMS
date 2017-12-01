@@ -6,7 +6,7 @@
         {% endblock %}
     </head>
     {% block body %}
-    <body{{ frontendEditorAttributes(type) }}>
+    <body ontouchstart{{ frontendEditorAttributes(type) }}>
         {% include 'DameertFrontendCmsBundle::toolbar.html.twig' %}
         {% block content %}{% endblock %}
         {% block javascripts %}
