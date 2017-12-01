@@ -613,8 +613,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/bundles/frontend-cms/fonts/glyphicons-halflings-regular.f4769f9b.eot);
-  src: url(/bundles/frontend-cms/fonts/glyphicons-halflings-regular.f4769f9b.eot?#iefix) format("embedded-opentype"), url(/bundles/frontend-cms/fonts/glyphicons-halflings-regular.448c34a5.woff2) format("woff2"), url(/bundles/frontend-cms/fonts/glyphicons-halflings-regular.fa277232.woff) format("woff"), url(/bundles/frontend-cms/fonts/glyphicons-halflings-regular.e18bbf61.ttf) format("truetype"), url(/bundles/frontend-cms/images/glyphicons-halflings-regular.89889688.svg#glyphicons_halflingsregular) format("svg");
+  src: url(/bundles/dameertfrontendcms/fonts/glyphicons-halflings-regular.f4769f9b.eot);
+  src: url(/bundles/dameertfrontendcms/fonts/glyphicons-halflings-regular.f4769f9b.eot?#iefix) format("embedded-opentype"), url(/bundles/dameertfrontendcms/fonts/glyphicons-halflings-regular.448c34a5.woff2) format("woff2"), url(/bundles/dameertfrontendcms/fonts/glyphicons-halflings-regular.fa277232.woff) format("woff"), url(/bundles/dameertfrontendcms/fonts/glyphicons-halflings-regular.e18bbf61.ttf) format("truetype"), url(/bundles/dameertfrontendcms/images/glyphicons-halflings-regular.89889688.svg#glyphicons_halflingsregular) format("svg");
 }
 
 .glyphicon {
@@ -8672,8 +8672,8 @@ button.close {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/bundles/frontend-cms/fonts/fontawesome-webfont.674f50d2.eot);
-  src: url(/bundles/frontend-cms/fonts/fontawesome-webfont.674f50d2.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/bundles/frontend-cms/fonts/fontawesome-webfont.af7ae505.woff2) format("woff2"), url(/bundles/frontend-cms/fonts/fontawesome-webfont.fee66e71.woff) format("woff"), url(/bundles/frontend-cms/fonts/fontawesome-webfont.b06871f2.ttf) format("truetype"), url(/bundles/frontend-cms/images/fontawesome-webfont.912ec66d.svg#fontawesomeregular) format("svg");
+  src: url(/bundles/dameertfrontendcms/fonts/fontawesome-webfont.674f50d2.eot);
+  src: url(/bundles/dameertfrontendcms/fonts/fontawesome-webfont.674f50d2.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/bundles/dameertfrontendcms/fonts/fontawesome-webfont.af7ae505.woff2) format("woff2"), url(/bundles/dameertfrontendcms/fonts/fontawesome-webfont.fee66e71.woff) format("woff"), url(/bundles/dameertfrontendcms/fonts/fontawesome-webfont.b06871f2.ttf) format("truetype"), url(/bundles/dameertfrontendcms/images/fontawesome-webfont.912ec66d.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
