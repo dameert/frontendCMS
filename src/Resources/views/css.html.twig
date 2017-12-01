@@ -1,10 +1,3 @@
 {% if is_granted('ROLE_FRONTEND_ADMIN') %}
-    {% stylesheets
-        'bundles/dameertfrontendcms/css/frontend-editor.css'
-        'bundles/dameertfrontendcms/css/medium-editor.css'
-        'bundles/dameertfrontendcms/css/bootstrap-medium-theme.css'
-        filter='cssrewrite' output='css/frontend-editor-compiled.css'
-    %}
-        <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/dameertfrontendcms/frontend.css') }}" />
 {% endif %}

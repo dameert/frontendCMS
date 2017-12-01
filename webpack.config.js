@@ -6,7 +6,7 @@ Encore
 
     // the public path used by the web server to access the previous directory
     .setPublicPath('/bundles/dameertfrontendcms')
-    .setManifestKeyPrefix('bundles/dameertfrontendcms-cms')
+    .setManifestKeyPrefix('bundles/dameertfrontendcms')
     // will create web/build/app.js and web/build/app.css
     .addEntry('frontend', './assets/js/frontend-editor.js')
 
