@@ -1,5 +1,3 @@
 {% if is_granted('ROLE_FRONTEND_ADMIN') %}
-    {% javascripts '@DameertFrontendCmsBundle/Resources/public/js/*' output='js/frontend-editor-compiled.js' %}
-        <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+    <script src="{{ asset('bundles/dameertfrontendcms/frontend.js') }}"></script>
 {% endif %}
