@@ -39,6 +39,7 @@ class ContentController extends Controller
         return $this->render($template, [
             'data' => $data->getData(),
             'type' => $data->getType(),
+            'name' => $name,
         ]);
     }
 }
