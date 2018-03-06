@@ -17,7 +17,7 @@ class ContentController extends Controller
     }
 
     /**
-     * @Route("/{name}", name="frontend_content")
+     * @Route("/{name}", name="frontend_content", requirements={"name"="[^.]+"})
      */
     public function contentAction(ContentService $contentService, $name)
     {
